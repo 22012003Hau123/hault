@@ -77,6 +77,9 @@ def scrape_articles(limit=LIMIT):
     for path in skipped:
         print(f"Skipped: {os.path.basename(path)}")
 
-    print(f"\nSummary: {len(added)} added | {len(updated)} updated | {len(skipped)} skipped")
-    return added + updated
+    print("\nSummary:")
+    print(f"  Added:   {len(added)}")
+    print(f"  Updated: {len(updated)}")
+    print(f"  Skipped: {len(skipped)}")
+
 
